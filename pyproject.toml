@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boxq"
+version = "0.1.0"
+description = "Compute and query cryptanalytic tables; export TeX, CSV, or DKVP"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.3.5"]
+readme = "README.txt"
+license = "BSD-2-Clause"
+license-files = ["LICENSE"]
+
+[dependency-groups]
+dev = ["pytest==9.0.2"]
+
+[tool.setuptools.packages.find]
+include = ["boxq*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

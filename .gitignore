@@ -1,0 +1,11 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+/build/
+dist/
+output/
+
+# The experiment interpreter is pinned even when global ignores hide it.
+!.python-version
