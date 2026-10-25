@@ -19,7 +19,7 @@ dev = ["pytest==9.0.2"]
 include = ["boxq*"]
 
 [tool.setuptools.package-data]
-boxq = ["data/*.json", "data/*LICENSE*.txt"]
+boxq = ["data/*.json", "data/*LICENSE*.txt", "_native/*.cpp", "_native/*.hpp", "_native/*/*.hpp"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

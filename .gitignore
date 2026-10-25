@@ -6,6 +6,12 @@ __pycache__/
 /build/
 dist/
 output/
+*.qnf
+*.qdd
+
+# These are source headers, even when global ignores match build/.
+!boxq/_native/build/
+!boxq/_native/build/*.hpp
 
 # Redistributable, attributed MISTY1 inputs and provenance are package assets.
 !boxq/data/
