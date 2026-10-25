@@ -15,6 +15,9 @@ license-files = ["LICENSE", "THIRD-PARTY-NOTICES.txt", "boxq/data/BOTAN-LICENSE.
 [dependency-groups]
 dev = ["pytest==9.0.2"]
 
+[project.scripts]
+boxq = "boxq.cli.main:main"
+
 [tool.setuptools.packages.find]
 include = ["boxq*"]
 
