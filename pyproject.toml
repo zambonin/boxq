@@ -10,13 +10,16 @@ requires-python = ">=3.11"
 dependencies = ["numpy==2.3.5"]
 readme = "README.txt"
 license = "BSD-2-Clause"
-license-files = ["LICENSE"]
+license-files = ["LICENSE", "THIRD-PARTY-NOTICES.txt", "boxq/data/BOTAN-LICENSE.txt"]
 
 [dependency-groups]
 dev = ["pytest==9.0.2"]
 
 [tool.setuptools.packages.find]
 include = ["boxq*"]
+
+[tool.setuptools.package-data]
+boxq = ["data/*.json", "data/*LICENSE*.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

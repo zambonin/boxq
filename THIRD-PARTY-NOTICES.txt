@@ -1,0 +1,25 @@
+Project-authored code is released under BSD-2-Clause; see LICENSE.
+
+Botan MISTY1 inputs
+------------------
+boxq/data/misty1.json contains S7/S9 values transcribed from Botan 2.19.5,
+commit 935055e839794a076d209c9e9a1e9cd2255aae01. These retain BSD-2-Clause
+terms and the notices in boxq/data/BOTAN-LICENSE.txt. They retain their own
+terms alongside the project BSD-2-Clause license. Provenance is recorded
+beside the arrays.
+
+External Sage catalog
+---------------------
+The full SageMath 10.9 catalog is not bundled in this source distribution or
+wheel. The explicit generate-sboxes command imports a hash-pinned source
+module into external user data without installing Sage. Imported source/data
+retain their upstream provenance and applicable terms; generating a JSON file
+does not relicense that data under the project BSD-2-Clause license.
+https://github.com/sagemath/sage/blob/686dc1a8d420c2e0aabadd4f602d9a0aa4690c50/COPYING.txt
+
+Midori experiment input
+-----------------------
+The Midori64 super-S-box is independently implemented from the mathematical
+Sb0 and MixColumn definitions in Banik et al., ASIACRYPT 2015, Table 3 and
+Section 3.1, DOI 10.1007/978-3-662-48800-3_17. No third-party implementation
+was copied. It is the zero-intermediate-key 16-bit column map.

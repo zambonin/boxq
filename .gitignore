@@ -7,5 +7,10 @@ __pycache__/
 dist/
 output/
 
+# Redistributable, attributed MISTY1 inputs and provenance are package assets.
+!boxq/data/
+!boxq/data/misty1.json
+!boxq/data/misty1-provenance.json
+
 # The experiment interpreter is pinned even when global ignores hide it.
 !.python-version

@@ -1,0 +1,9 @@
+{
+  "source": "Botan2.19.5",
+  "revision": "935055e839794a076d209c9e9a1e9cd2255aae01",
+  "url": "https://raw.githubusercontent.com/randombit/botan/935055e839794a076d209c9e9a1e9cd2255aae01/src/lib/block/misty1/misty1.cpp",
+  "source_sha256": "aebe3065483290b038f3e1c57cb06ba6c80d1dc1f3510884111733c3d3971281",
+  "license": "BSD-2-Clause",
+  "license_file": "BOTAN-LICENSE.txt",
+  "verified_against": "RFC2994 and supplied reference tables"
+}
